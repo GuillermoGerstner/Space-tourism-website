@@ -1,0 +1,709 @@
+
+.technology__body {
+    min-height: 100vh;
+    transition: all .5s ease;
+    
+    background-image: url('./files/starter-code/assets/technology/background-technology-mobile.jpg');
+    background-size: cover;
+    background-position: bottom center;
+
+    @media (min-width: 768px) {
+        background-image: url('./files/starter-code/assets/technology/background-technology-tablet.jpg');
+        background-position: center center;
+    }
+    @media (min-width: 1440px) {
+        background-image: url('./files/starter-code/assets/technology/background-technology-desktop.jpg');
+    }
+}
+
+.technology {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1440px) {
+    }
+
+    &__subtitle {
+        margin: 88px auto 0;
+        width: fit-content;
+        height: 19px;
+        display: flex;
+
+        @media (min-width: 768px) {
+            margin: 136px 0 0 38.5px;
+            height: 24px;
+        }
+        @media (min-width: 1440px) {
+            margin: 212px 0 0 166.5px;
+            height: 34px;
+        }
+
+        &__number {
+            height: 19px;
+            
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2.7px;
+            
+            color: #FFFFFF;
+            
+            mix-blend-mode: normal;
+            opacity: 0.25;
+
+            @media (min-width: 768px) {
+                height: 24px;
+                
+                font-size: 20px;
+                line-height: 24px;
+                
+                letter-spacing: 3.375px;
+            }
+            @media (min-width: 1440px) {
+                height: 34px;
+                
+                font-size: 28px;
+                line-height: 34px;
+                
+                letter-spacing: 4.725px;
+            }
+        }
+
+        &__text {
+            margin: 0 0 0 16px;
+            height: 19px;
+            
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2.7px;
+            text-transform: uppercase;
+            
+            color: #FFFFFF;
+
+            @media (min-width: 768px) {
+                height: 24px;
+                
+                font-size: 20px;
+                line-height: 24px;
+                
+                letter-spacing: 3.375px;
+            }
+            @media (min-width: 1440px) {
+                margin: 0 0 0 24px;
+                height: 34px;
+                
+                font-size: 28px;
+                line-height: 34px;
+                
+                letter-spacing: 4.725px;
+            }
+        }
+    }
+
+    &__content {
+        margin: 32px 0 81px;
+        position: relative;
+
+        @media (min-width: 768px) {
+            margin: 60px 0 97px;
+        }
+        @media (min-width: 1440px) {
+            margin: 26px 0 101px 165px;
+        }
+
+        &__image {
+            position: relative;
+
+            @media (min-width: 1440px) {
+                position: absolute;
+                width: 515px;
+                height: 527px;
+                top: 0;
+                right: 0;
+            }
+
+            &__launch {
+                display: block;
+                width: 100%;
+                max-height: 0;
+
+                transition: max-height .5s ease;
+
+                @media (min-width: 1440px) {
+                    content: url('../files/starter-code/assets/technology/image-launch-vehicle-portrait.jpg');
+                }
+            }
+            &__spaceport {
+                display: block;
+                width: 100%;
+                max-height: 0;
+
+                transition: max-height .5s ease;
+
+                @media (min-width: 1440px) {
+                    content: url('../files/starter-code/assets/technology/image-spaceport-portrait.jpg');
+                }
+            }
+            &__capsule {
+                display: block;
+                width: 100%;
+                max-height: 0;
+
+                transition: max-height .5s ease;
+
+                @media (min-width: 1440px) {
+                    content: url('../files/starter-code/assets/technology/image-space-capsule-portrait.jpg');
+                }
+            }
+        }
+
+        &__data {
+            margin: 34px 24px 81px;
+            position: relative;
+
+            @media (min-width: 768px) {
+                margin: 56px 155px 97px;
+            }
+            @media (min-width: 1440px) {
+                margin: 111px 0 0 0;
+                width: 604px;
+                height: 304px;
+            }
+
+            &__selector {
+                margin: 0 auto;
+                width: 152px;
+                height: 40px;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+
+                @media (min-width: 768px) {
+                    width: 210px;
+                    height: 60px;
+                }
+                @media (min-width: 1440px) {
+                    position: absolute;
+                    width: 80px;
+                    height: 304px;
+                    flex-direction: column;
+                }
+
+                &__option1 {
+                    width: 40px;
+                    height: 40px;
+                    background: #ffffff00;
+                    border-radius: 100%;
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+
+                    font-family: 'Bellefair';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 18px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    
+                    color: #FFFFFF;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: #ffffff00;
+                        border: 1px solid #FFFFFF;
+                        color: #FFFFFF;
+                    }
+
+                    @media (min-width: 768px) {
+                        width: 60px;
+                        height: 60px;
+
+                        font-size: 24px;
+                        line-height: 28px;
+                        
+                        letter-spacing: 1.5px;
+                    }
+                    @media (min-width: 1440px) {
+                        width: 80px;
+                        height: 80px;
+
+                        font-size: 32px;
+                        line-height: 37px;
+
+                        letter-spacing: 2px;
+                    }
+                }
+                &__option2 {
+                    width: 40px;
+                    height: 40px;
+                    background: #ffffff00;
+                    border-radius: 100%;
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+
+                    font-family: 'Bellefair';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 18px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    
+                    color: #FFFFFF;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: #ffffff00;
+                        border: 1px solid #FFFFFF;
+                        color: #FFFFFF;
+                    }
+
+                    @media (min-width: 768px) {
+                        width: 60px;
+                        height: 60px;
+
+                        font-size: 24px;
+                        line-height: 28px;
+                        
+                        letter-spacing: 1.5px;
+                    }
+                    @media (min-width: 1440px) {
+                        width: 80px;
+                        height: 80px;
+
+                        font-size: 32px;
+                        line-height: 37px;
+
+                        letter-spacing: 2px;
+                    }
+                }
+                &__option3 {
+                    width: 40px;
+                    height: 40px;
+                    background: #ffffff00;
+                    border-radius: 100%;
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+
+                    font-family: 'Bellefair';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 18px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    
+                    color: #FFFFFF;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: #ffffff00;
+                        border: 1px solid #FFFFFF;
+                        color: #FFFFFF;
+                    }
+
+                    @media (min-width: 768px) {
+                        width: 60px;
+                        height: 60px;
+
+                        font-size: 24px;
+                        line-height: 28px;
+                        
+                        letter-spacing: 1.5px;
+                    }
+                    @media (min-width: 1440px) {
+                        width: 80px;
+                        height: 80px;
+
+                        font-size: 32px;
+                        line-height: 37px;
+
+                        letter-spacing: 2px;
+                    }
+                }
+
+                &__selection {
+                    position: absolute;
+                    left: 0;
+                    width: 40px;
+                    height: 40px;
+                    background: #FFFFFF;
+                    border-radius: 100%;
+                    border: none;
+
+                    font-family: 'Bellefair';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 18px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    
+                    color: #0B0D17;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: #ffffff00;
+                        border: 1px solid #FFFFFF;
+                        color: #FFFFFF;
+                    }
+
+                    @media (min-width: 768px) {
+                        width: 60px;
+                        height: 60px;
+
+                        font-size: 24px;
+                        line-height: 28px;
+                        
+                        letter-spacing: 1.5px;
+                    }
+                    @media (min-width: 1440px) {
+                        width: 80px;
+                        height: 80px;
+
+                        font-size: 32px;
+                        line-height: 37px;
+
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+
+            &__info {
+                margin: 26px 0 0;
+                height: 220px;
+                position: relative;
+
+                @media (min-width: 768px) {
+                    margin: 44px 0 0;
+                    height: 237px;
+                }
+                @media (min-width: 1440px) {
+                    margin: 0 0 0 160px;
+                    height: 304px;
+                }
+
+                &__launch {
+                    position: absolute;
+                    width: 100%;
+                    max-height: 0;
+                    overflow: hidden;
+
+                    transition: max-height .5s ease;
+
+                    @media (min-width: 1440px) {
+                        width: 470px;
+                    }
+                    
+                    &__subtitle {
+                        margin: 0 auto;
+                        height: 17px;
+                        
+                        font-family: 'Barlow Condensed';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        
+                        text-align: center;
+                        letter-spacing: 2.3625px;
+                        
+                        color: #D0D6F9;
+
+                        @media (min-width: 768px) {
+                            height: 19px;
+                            
+                            font-size: 16px;
+                            line-height: 19px;
+                            letter-spacing: 2.7px;                         
+                        }
+                        @media (min-width: 1440px) {
+                            margin: 0;
+                            text-align: left;
+                        }
+                    }
+
+                    &__title {
+                        margin: 9px auto 0;
+                        height: 28px;
+                        
+                        font-family: 'Bellefair';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 28px;
+                        
+                        text-align: center;
+                        text-transform: uppercase;
+                        
+                        color: #FFFFFF;                        
+
+                        @media (min-width: 768px) {
+                            margin: 16px auto 0;
+                            height: 46px;
+                            
+                            font-size: 40px;
+                            line-height: 46px;
+                        }
+                        @media (min-width: 1440px) {
+                            margin: 11px 0 0 0;
+                            height: 64px;
+                            
+                            font-size: 56px;
+                            line-height: 64px;
+                            text-align: left;
+                        }
+                    }
+
+                    &__description {
+                        margin: 16px auto 0;
+                        height: 175px;
+                        
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 25px;
+                        
+                        text-align: center;
+                        
+                        color: #D0D6F9;
+
+                        @media (min-width: 768px) {
+                            height: 140px;
+                            
+                            font-size: 16px;
+                            line-height: 28px;
+                        }
+                        @media (min-width: 1440px) {
+                            margin: 17px 0 0 0;
+                            height: 192px;
+                            padding: 0;
+                            width: 444px;
+                            
+                            font-size: 18px;
+                            line-height: 32px;
+                            text-align: left;
+                        }
+                    }
+                }
+                &__spaceport {
+                    position: absolute;
+                    width: 100%;
+                    max-height: 0;
+                    overflow: hidden;
+
+                    transition: max-height .5s ease;
+
+                    @media (min-width: 1440px) {
+                        width: 444px;
+                    }
+                    
+                    &__subtitle {
+                        margin: 0 auto;
+                        height: 17px;
+                        
+                        font-family: 'Barlow Condensed';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        
+                        text-align: center;
+                        letter-spacing: 2.3625px;
+                        
+                        color: #D0D6F9;
+
+                        @media (min-width: 768px) {
+                            height: 19px;
+                            
+                            font-size: 16px;
+                            line-height: 19px;
+                            letter-spacing: 2.7px;                         
+                        }
+                        @media (min-width: 1440px) {
+                            margin: 0;
+                            text-align: left;
+                        }
+                    }
+
+                    &__title {
+                        margin: 9px auto 0;
+                        height: 28px;
+                        
+                        font-family: 'Bellefair';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 28px;
+                        
+                        text-align: center;
+                        text-transform: uppercase;
+                        
+                        color: #FFFFFF;                        
+
+                        @media (min-width: 768px) {
+                            margin: 16px auto 0;
+                            height: 46px;
+                            
+                            font-size: 40px;
+                            line-height: 46px;
+                        }
+                        @media (min-width: 1440px) {
+                            margin: 11px 0 0 0;
+                            height: 64px;
+                            
+                            font-size: 56px;
+                            line-height: 64px;
+                            text-align: left;
+                        }
+                    }
+
+                    &__description {
+                        margin: 16px auto 0;
+                        height: 175px;
+                        
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 25px;
+                        
+                        text-align: center;
+                        
+                        color: #D0D6F9;
+
+                        @media (min-width: 768px) {
+                            height: 140px;
+                            
+                            font-size: 16px;
+                            line-height: 28px;
+                        }
+                        @media (min-width: 1440px) {
+                            margin: 17px 0 0 0;
+                            height: 192px;
+                            padding: 0;
+                            width: 444px;
+                            
+                            font-size: 18px;
+                            line-height: 32px;
+                            text-align: left;
+                        }
+                    }
+                }
+                &__capsule {
+                    position: absolute;
+                    width: 100%;
+                    max-height: 0;
+                    overflow: hidden;
+
+                    transition: max-height .5s ease;
+
+                    @media (min-width: 1440px) {
+                        width: 444px;
+                    }
+                    
+                    &__subtitle {
+                        margin: 0 auto;
+                        height: 17px;
+                        
+                        font-family: 'Barlow Condensed';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        
+                        text-align: center;
+                        letter-spacing: 2.3625px;
+                        
+                        color: #D0D6F9;
+
+                        @media (min-width: 768px) {
+                            height: 19px;
+                            
+                            font-size: 16px;
+                            line-height: 19px;
+                            letter-spacing: 2.7px;                         
+                        }
+                        @media (min-width: 1440px) {
+                            margin: 0;
+                            text-align: left;
+                        }
+                    }
+
+                    &__title {
+                        margin: 9px auto 0;
+                        height: 28px;
+                        
+                        font-family: 'Bellefair';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 28px;
+                        
+                        text-align: center;
+                        text-transform: uppercase;
+                        
+                        color: #FFFFFF;                        
+
+                        @media (min-width: 768px) {
+                            margin: 16px auto 0;
+                            height: 46px;
+                            
+                            font-size: 40px;
+                            line-height: 46px;
+                        }
+                        @media (min-width: 1440px) {
+                            margin: 11px 0 0 0;
+                            height: 64px;
+                            
+                            font-size: 56px;
+                            line-height: 64px;
+                            text-align: left;
+                        }
+                    }
+
+                    &__description {
+                        margin: 16px auto 0;
+                        height: 175px;
+                        
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 25px;
+                        
+                        text-align: center;
+                        
+                        color: #D0D6F9;
+
+                        @media (min-width: 768px) {
+                            height: 140px;
+                            
+                            font-size: 16px;
+                            line-height: 28px;
+                        }
+                        @media (min-width: 1440px) {
+                            margin: 17px 0 0 0;
+                            height: 192px;
+                            padding: 0;
+                            width: 444px;
+                            
+                            font-size: 18px;
+                            line-height: 32px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

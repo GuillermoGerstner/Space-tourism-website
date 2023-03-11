@@ -1,0 +1,46 @@
+@use './sass/header';
+@use './sass/home';
+@use './sass/destination';
+@use './sass/crew';
+@use './sass/technology';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+    color: white;
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+}
+.attribution a {
+    color: white;
+}
+
+body {
+    position: relative;
+    background-color: #0b0d19;
+}
+
+.appearModalContainer {
+    z-index: 1;
+}
+.appearModal {
+    right: 0;
+}
+
+.appearInfo {
+    max-height: 550px;
+}

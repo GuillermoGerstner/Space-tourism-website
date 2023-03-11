@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./files/starter-code/assets/favicon-32x32.png">
+
+    <title>Home | Space tourism website</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body class="home__body">
+    <header class="header">
+        <img src="./files/starter-code/assets/shared/logo.svg" alt="logo" class="header__logo">
+    
+        <img src="./files/starter-code/assets/shared/icon-hamburger.svg" alt="menu" class="header__menu">
+
+        <div class="header__bar"></div>
+
+        <nav class="header__navigation">
+            <a href="javascript:delay('./index.html')" class="header__navigation__link0">
+                <span class="header__navigation__link0__number">00</span>
+                <p class="header__navigation__link0__text">Home</p>
+            </a>
+
+            <a href="javascript:delay('./pages/destination.html')" class="header__navigation__link1">
+                <span class="header__navigation__link1__number">01</span>
+                <p class="header__navigation__link1__text">Destination</p>
+            </a>
+
+            <a href="javascript:delay('./pages/crew.html')" class="header__navigation__link2">
+                <span class="header__navigation__link2__number">02</span>
+                <p class="header__navigation__link2__text">Crew</p>
+            </a>
+
+            <a href="javascript:delay('./pages/technology.html')" class="header__navigation__link3">
+                <span class="header__navigation__link3__number">03</span>
+                <p class="header__navigation__link3__text">Technology</p>
+            </a>
+
+            <div class="header__navigation__indicatorT"></div>
+            <div class="header__navigation__indicatorD"></div>
+        </nav>
+    </header>
+
+    <div class="modal__container">
+        <div class="modal">
+            <img src="./files/starter-code/assets/shared/icon-close.svg" alt="close" class="modal__close">
+        
+            <a href="javascript:delay('./index.html')" class="modal__link0">
+                <p class="modal__link0__text">
+                    <span class="modal__link0__number">00</span>
+                    Home
+                </p>
+            </a>
+
+            <a href="javascript:delay('./pages/destination.html')" class="modal__link1">
+                <p class="modal__link1__text">
+                    <span class="modal__link1__number">01</span>
+                    Destination
+                </p>
+            </a>
+
+            <a href="javascript:delay('./pages/crew.html')" class="modal__link2">
+                <p class="modal__link2__text">
+                    <span class="modal__link2__number">02</span>
+                    Crew
+                </p>
+            </a>
+
+            <a href="javascript:delay('./pages/technology.html')" class="modal__link3">
+                <p class="modal__link3__text">
+                    <span class="modal__link3__number">03</span>
+                    Technology
+                </p>
+            </a>
+
+            <div class="modal__indicator"></div>
+        </div>
+    </div>
+
+    <main class="home">
+        <div class="home__content">
+            <h2 class="home__content__subtitle">So, you want to travel to</h2>
+            <h1 class="home__content__title">Space</h1>
+            <p class="home__content__description">  Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+        </div>
+
+        <a href="#" onclick="delay('./pages/destination.html')" class="home__button">
+            <p class="home__button__text">Explore</p>
+        </a>
+    </main>
+
+    <footer class="attribution">
+        Coded by <a href="https://www.linkedin.com/in/guillermogerstner">Guillermo Gerstner</a>.
+    </footer>
+
+    <script src="./js/header.js"></script>
+</body>
+</html>

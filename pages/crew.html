@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../files/starter-code/assets/favicon-32x32.png">
+
+    <title>Crew | Space tourism website</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body class="crew__body">
+    <header class="header">
+        <img src="../files/starter-code/assets/shared/logo.svg" alt="logo" class="header__logo">
+    
+        <img src="../files/starter-code/assets/shared/icon-hamburger.svg" alt="menu" class="header__menu">
+
+        <div class="header__bar"></div>
+
+        <nav class="header__navigation">
+            <a href="javascript:delay('../index.html')" class="header__navigation__link0">
+                <span class="header__navigation__link0__number">00</span>
+                <p class="header__navigation__link0__text">Home</p>
+            </a>
+
+            <a href="javascript:delay('./destination.html')" class="header__navigation__link1">
+                <span class="header__navigation__link1__number">01</span>
+                <p class="header__navigation__link1__text">Destination</p>
+            </a>
+
+            <a href="javascript:delay('./crew.html')" class="header__navigation__link2">
+                <span class="header__navigation__link2__number">02</span>
+                <p class="header__navigation__link2__text">Crew</p>
+            </a>
+
+            <a href="javascript:delay('./technology.html')" class="header__navigation__link3">
+                <span class="header__navigation__link3__number">03</span>
+                <p class="header__navigation__link3__text">Technology</p>
+            </a>
+
+            <div class="header__navigation__indicatorT" style="width: 36px; left: 246px;"></div>
+            <div class="header__navigation__indicatorD" style="width: 71px; left: 419px;"></div>
+        </nav>
+    </header>
+
+    <div class="modal__container">
+        <div class="modal">
+            <img src="../files/starter-code/assets/shared/icon-close.svg" alt="close" class="modal__close">
+        
+            <a href="javascript:delay('../index.html')" class="modal__link0">
+                <p class="modal__link0__text">
+                    <span class="modal__link0__number">00</span>
+                    Home
+                </p>
+            </a>
+
+            <a href="javascript:delay('./destination.html')" class="modal__link1">
+                <p class="modal__link1__text">
+                    <span class="modal__link1__number">01</span>
+                    Destination
+                </p>
+            </a>
+
+            <a href="javascript:delay('./crew.html')" class="modal__link2">
+                <p class="modal__link2__text">
+                    <span class="modal__link2__number">02</span>
+                    Crew
+                </p>
+            </a>
+
+            <a href="javascript:delay('./technology.html')" class="modal__link3">
+                <p class="modal__link3__text">
+                    <span class="modal__link3__number">03</span>
+                    Technology
+                </p>
+            </a>
+
+            <div class="modal__indicator" style="top: 215px;"></div>
+        </div>
+    </div>
+
+    <main class="crew">
+        <div class="crew__subtitle">
+            <span class="crew__subtitle__number">02</span>
+            <h2 class="crew__subtitle__text">Meet your crew</h2>
+        </div>
+
+        <div class="crew__content">
+            <div class="crew__content__person">
+                <img src="../files/starter-code/assets/crew/image-douglas-hurley.png" alt="douglas" class="crew__content__person__douglas">
+                <img src="../files/starter-code/assets/crew/image-mark-shuttleworth.png" alt="mark" class="crew__content__person__mark">
+                <img src="../files/starter-code/assets/crew/image-victor-glover.png" alt="victor" class="crew__content__person__victor">
+                <img src="../files/starter-code/assets/crew/image-anousheh-ansari.png" alt="anousheh" class="crew__content__person__anousheh">
+
+                <hr class="crew__content__person__bar">
+            </div>
+
+            <div class="crew__content__data">
+                <div class="crew__content__data__selector">
+                    <button class="crew__content__data__selector__option1"></button>
+                    <button class="crew__content__data__selector__option2"></button>
+                    <button class="crew__content__data__selector__option3"></button>
+                    <button class="crew__content__data__selector__option4"></button>
+
+                    <button class="crew__content__data__selector__indicator"></button>
+                </div>
+
+                <div class="crew__content__data__douglas">
+                    <h3 class="crew__content__data__douglas__title">Commander</h3>
+                    <h2 class="crew__content__data__douglas__name">Douglas Hurley</h2>
+                    <p class="crew__content__data__douglas__description">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+                </div>
+                <div class="crew__content__data__mark">
+                    <h3 class="crew__content__data__mark__title">Mission Specialist </h3>
+                    <h2 class="crew__content__data__mark__name">MARK SHUTTLEWORTH</h2>
+                    <p class="crew__content__data__mark__description">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
+                </div>
+                <div class="crew__content__data__victor">
+                    <h3 class="crew__content__data__victor__title">PILOT</h3>
+                    <h2 class="crew__content__data__victor__name">Victor Glover</h2>
+                    <p class="crew__content__data__victor__description">Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. </p>
+                </div>
+                <div class="crew__content__data__anousheh">
+                    <h3 class="crew__content__data__anousheh__title">Flight Engineer</h3>
+                    <h2 class="crew__content__data__anousheh__name">Anousheh Ansari</h2>
+                    <p class="crew__content__data__anousheh__description">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="attribution">
+        Coded by <a href="https://www.linkedin.com/in/guillermogerstner">Guillermo Gerstner</a>.
+    </footer>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/crew.js"></script>
+</body>
+</html>
